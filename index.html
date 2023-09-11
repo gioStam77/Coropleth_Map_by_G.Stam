@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Choropleth Map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  </head>
+  <body></body>
+  <svg
+    id="legend"
+    class="legend"
+  >
+    <g>
+      <rect
+        x="10"
+        y="0"
+        width="40"
+        height="40"
+        fill="red"
+      ></rect>
+      <text
+        x="60"
+        y="20"
+        fill="black"
+      >
+        Less than 15%
+      </text>
+    </g>
+    <g>
+      <rect
+        x="10"
+        y="40"
+        width="40"
+        height="40"
+        fill="orange"
+      ></rect>
+      <text
+        x="60"
+        y="60"
+        fill="black"
+      >
+        Less than 30%
+      </text>
+    </g>
+    <g>
+      <rect
+        x="10"
+        y="80"
+        width="40"
+        height="40"
+        fill="yellow"
+      ></rect>
+      <text
+        x="60"
+        y="100"
+        fill="black"
+      >
+        Less than 45%
+      </text>
+    </g>
+    <g>
+      <rect
+        x="10"
+        y="115"
+        width="40"
+        height="40"
+        fill="blue"
+      ></rect>
+      <text
+        x="60"
+        y="140"
+        fill="black"
+      >
+        Over than 45%
+      </text>
+    </g>
+  </svg>
+  <script
+    defer
+    src="/script.js"
+  ></script>
+  <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
